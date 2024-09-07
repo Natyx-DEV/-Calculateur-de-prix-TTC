@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculateur de prix TTC</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calcul du prix TTC</h1>
+
+        <label for="prixHT">Prix Hors Taxe (HT) :</label>
+        <input type="number" id="prixHT" placeholder="Entrer le prix HT">
+
+        <label for="tauxTVA">Taux de TVA (%) :</label>
+        <input type="number" id="tauxTVA" placeholder="Entrer le taux de TVA">
+
+        <button onclick="calculerTTC()">Calculer TTC</button>
+
+        <h2>Prix TTC : <span id="prixTTC"></span></h2>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
